@@ -13,7 +13,7 @@ slug:
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: 'content/blog'
+    folder: 'content'
     create: true
     slug: 'index'
     media_folder: ''
