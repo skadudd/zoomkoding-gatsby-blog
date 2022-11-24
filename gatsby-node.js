@@ -30,7 +30,7 @@ const createPostsPages = ({ createPage, results }) => {
   const { edges } = results.data.allMarkdownRemark;
 
   edges.forEach(({ node }) => {
-    // const postCategories = node.frontmatter.categories.split(' ');
+    const postCategories = node.frontmatter.categories.split(' ');
     postCategories.forEach((category) => categorySet.add(category));
   });
 
@@ -95,6 +95,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  createBlogPages({ createPage, results });
+  // createBlogPages({ createPage, results });
   createPostsPages({ createPage, results });
 };

@@ -29,3 +29,5 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: 'Category', name: 'category_name', widget: 'string' }
+      
